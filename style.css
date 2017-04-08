@@ -58,26 +58,26 @@ body {
   font-size: 0.8em;
   left: 0.4em;
   position: absolute;
-  top: 0.3em;
+  top: 0.4em;
 }
 
 #yo-one {
   transform:  rotate(-18deg)
-              translateX(-28px)
-              translateY(-10px);
+              translateX(-34px)
+              translateY(-7px);
 }
 
 #yo-two {
   transform:  rotate(-5deg)
-              translateX(-40px)
-              translateY(-10px);
+              translateX(-45px)
+              translateY(-5px);
 }
 
 #emoji {
   font-size: 1.2em;
   transform:  rotate(10deg)
-              translateX(69px)
-              translateY(-9px);
+              translateX(68px)
+              translateY(-1px);
 }
 
 #loader {
