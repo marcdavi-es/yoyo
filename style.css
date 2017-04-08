@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+@font-face {
+ font-family: 'Noto Sans SC';
+ font-style: normal;
+ font-weight: 700;
+ src: url(/NotoSansSC-Bold.woff2) format('woff2');
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+}
+
+#menu-wrapper {
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition-duration: 0.6s;
+  z-index: 3;
+}
+
+#menu-wrapper.off {
+  left: -100%;
+}
+
+#menu {
+  background: #ff6d6d;
+  color: white;
+  height: 100vh;
+  width: 12em;
+}
+
+#menu .target {
+  padding: 1em 0 0 1em;
+}
+
+#header {
+  background-color: #ff6d6d;
+  box-shadow: 0 1px 3px #929292;
+  color: white;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  height: 1.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+#header span {
+  display: inline-block;
+}
+
+#burger {
+  font-size: 0.8em;
+  left: 0.4em;
+  position: absolute;
+  top: 0.3em;
+}
+
+#yo-one {
+  transform:  rotate(-18deg)
+              translateX(-28px)
+              translateY(-10px);
+}
+
+#yo-two {
+  transform:  rotate(-5deg)
+              translateX(-40px)
+              translateY(-10px);
+}
+
+#emoji {
+  font-size: 1.2em;
+  transform:  rotate(10deg)
+              translateX(69px)
+              translateY(-9px);
+}
+
+#loader {
+  background: #ffc0c0;
+  height: 100vh;
+  opacity: 1;
+  position: absolute;
+  transition-duration: 0.4s;
+  width: 100%;
+  z-index: 1;
+}
+
+#loader img {
+  height: 4em;
+  left: calc(50% - 2em);
+  position: absolute;
+  top: calc(50% - 2em);
+  width: auto;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+#message {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.2em;
+  left: calc(15% - 1.5em);
+  max-width: 16em;
+  padding: 1.5em;
+  position: absolute;
+  text-align: center;
+  top: 6.6em;
+  width: 70%;
+  z-index: 1;
+}
+
+#message * {
+  margin: 0;
+}
+
+#message h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+#message p {
+  margin-bottom: 1.2em;
+}
+
+#message #button {
+  background: #ff6d6d;
+  border-radius: 0.2em;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.6em 1em;
+}
+
+#loader.nopacity {
+  opacity: 0;
+}
+
+.hidden {
+  display: none;
+  visibility: none;
+}

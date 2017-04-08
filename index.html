@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>游友</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div id="menu-wrapper" class="off">
+      <div id="menu">
+        <div class="target" data-target="mercatLlibertat">Mercat de la Llibertat</div>
+        <div class="target" data-target="sagradaFamilia">Sagrada Familia</div>
+        <div class="target" data-target="placaSantJaume">Placa Sant Jaume</div>
+      </div>
+    </div>
+    <div id="header">
+      <span id="burger">&#9776;</span>
+      <span id="emoji">🤳🏻</span>
+      <span id="yo-one">游</span>
+      <span id="yo-two">友</span>
+    </div>
+    <div id="loader">
+      <img src="spinner.gif" alt="">
+    </div>
+    <div id="map"></div>
+    <div id="message" class="hidden">
+      <h1>You made it!</h1>
+      <p>Looks like you're at<br>Mercat de la Llibertat</p>
+      <div id="button">Share a selfie</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLKYRrKGr8hnUzy4yFGUCw5KBFtxwAXuI&callback=initMap"
+        async defer></script>
+  </body>
+</html>
